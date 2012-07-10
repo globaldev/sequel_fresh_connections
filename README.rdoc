@@ -1,0 +1,17 @@
+# Fresh Connections
+
+The fresh_connections extension removes stale connections from the connection
+pool, ensuring any connections that have timed out won't be used.
+
+Enable the extension with:
+
+  Sequel.extension :fresh_connections
+
+A :max_connection_age option will then be available with Sequel::connect, this
+allows setting the maximum age a connection is allowed to reach before being
+removed from the pool.
+
+  Sequel.connect(..., :max_connection_age => 600)
+
+Each time a connection is used its age is reset, so as long as connections are
+in constant use they will not be removed from the pool.

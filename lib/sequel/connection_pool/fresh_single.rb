@@ -2,7 +2,7 @@ Sequel.require 'connection_pool/single'
 
 class Sequel::FreshSingleConnectionPool < Sequel::SingleConnectionPool
 
-  def initialize(opts={})
+  def initialize(db, opts={})
     super
     @max_connection_age = opts[:max_connection_age] || 1800 # 30 mins
     @last_use = nil

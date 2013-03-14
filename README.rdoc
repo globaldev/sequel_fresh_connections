@@ -1,4 +1,4 @@
-# Fresh Connections
+= Fresh Connections
 
 The fresh_connections extension removes stale connections from the connection
 pool, ensuring any connections that have timed out won't be used.
@@ -15,3 +15,10 @@ removed from the pool.
 
 Each time a connection is used its age is reset, so as long as connections are
 in constant use they will not be removed from the pool.
+
+== Sequel version compatibility
+
+    sequel  | sequel_fresh_connections
+  ----------+-------------------------
+  <= 3.40.0 |          0.1.0
+  >= 3.41.0 |          0.2.0

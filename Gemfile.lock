@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    sequel_fresh_connections (0.2.0)
+      sequel (>= 3.41.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    sequel (3.45.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sequel_fresh_connections!

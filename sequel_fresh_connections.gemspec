@@ -11,4 +11,6 @@ Gem::Specification.new do |s|
   s.email = "mat@sourcetagsandcodes.com"
   s.homepage = "https://github.com/globaldev/sequel_fresh_connections"
   s.add_dependency("sequel", ">= 3.41.0")
+  s.add_development_dependency("rspec")
+  s.add_development_dependency("simplecov")
 end

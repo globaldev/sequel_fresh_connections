@@ -1,3 +1,11 @@
+= Deprecated
+
+As of {Sequel 4.36.0}[https://github.com/jeremyevans/sequel/commit/eed5fb15f0156d4b0eeb32bbc86ed66d9d5d5e7f#diff-d3bb3391c79904494c60ee2ac2f33070] a connection_expiration extension has been added which replaces this gem.
+
+https://github.com/jeremyevans/sequel/blob/master/lib/sequel/extensions/connection_expiration.rb
+
+---
+
 = Fresh Connections
 
 The fresh_connections extension removes stale connections from the connection
